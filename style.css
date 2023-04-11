@@ -545,6 +545,15 @@ ul {
   color: #F16D7F;
 }
 
+.breadcrumbs a::before {
+  content: "/";
+  color: black;
+}
+
+.breadcrumbs a:first-child::before {
+  content: "";
+}
+
 .carusel {
   height: 724px;
   position: relative;
