@@ -94,10 +94,10 @@ a {
 
 .box-content {
   overflow: hidden;
-  min-height: 100vh;
 }
 
 .nav {
+  z-index: 20;
   background: #FFFFFF;
   box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
   width: 232px;
@@ -114,6 +114,7 @@ a {
   font-size: 14px;
   line-height: 17px;
   color: #000000;
+  padding-bottom: 24px;
 }
 .nav_heading {
   font-style: normal;
@@ -128,10 +129,13 @@ a {
   font-size: 14px;
   line-height: 17px;
   color: #6F6E6E;
+  padding-bottom: 12px;
+  padding-left: 23px;
 }
 
 li {
   list-style-type: none;
+  margin-bottom: 5px;
 }
 
 ul {
@@ -282,8 +286,8 @@ ul {
 }
 .product_content {
   background: #F8F8F8;
-  justify-content: center;
   display: flex;
+  justify-content: center;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
