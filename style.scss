@@ -93,12 +93,12 @@ a {
 }
 
 .header {
-    background: #222222;
+    background: $color_1;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     min-height: 75px;
-    background: #222222;
+    background: $color_1;
     flex-wrap: wrap;
     align-items: center;
     &_left {
@@ -116,6 +116,9 @@ a {
                 transform: scale(2);
             }
         }
+    }
+    .burger:hover {
+        background-color: $background-color_hover;
     }
     &_right {
         display: flex;
@@ -155,9 +158,6 @@ a {
     // min-height: 100vh;
 }
 
-// nav ul ul {
-//     z-index: 10;
-// }
 .nav {
     z-index: 20;
     background: $color_3;
@@ -212,7 +212,7 @@ ul {
 }
 
 .top__info_text {
-    border-left: 12px solid #F16D7F;
+    border-left: 12px solid $color_2;
     padding-left: 16px;
     margin-top: 50%;
 }
@@ -248,7 +248,7 @@ ul {
 
 .sale {
     display: grid;
-    gap: 30px;
+    gap: $gapGrid;
     grid-template-columns: repeat(3, 1fr);
     /* grid-template-rows: 260px 180px; */
     padding-top: 64px;
@@ -258,9 +258,8 @@ ul {
         height: 100%;
         top: 0;
         left: 0;
-        display: flex;
+        @include flexjuscenter();
         flex-direction: column;
-        justify-content: center;
         align-items: center;
     }
     &_text {
@@ -269,7 +268,7 @@ ul {
         font-size: 16px;
         line-height: 19px;
         text-align: center;
-        color: #FFFFFF;
+        color: $color_3;
     }
     &_title {
         font-style: normal;
@@ -277,7 +276,7 @@ ul {
         font-size: 24px;
         line-height: 29px;
         text-align: center;
-        color: #F16D7F;
+        color: $color_2;
     }
     &__item_big {
         position: relative;
@@ -315,7 +314,7 @@ ul {
     }
     &_all_content {
         display: grid;
-        gap: 30px;
+        gap: $gapGrid;
         grid-template-columns: repeat(auto-fit, 366px);
         justify-content: center;
         padding-top: 48px;
@@ -346,7 +345,7 @@ ul {
         margin: 0;
     }
     &_content {
-        background: #F8F8F8;
+        background: $color_8;
         @include flexjuscenter();
         flex-direction: column;
         justify-content: center;
@@ -419,18 +418,16 @@ ul {
     background: #222224;
     padding-top: 104px;
     padding-bottom: 104px;
-    display: flex;
+    @include flexjuscenter();
     flex-wrap: wrap;
-    justify-content: center;
     gap: 30px;
     align-items: flex-end;
     &__item {
         width: 360px;
-        display: flex;
+        @include flexjuscenter();
         flex-direction: column;
         align-items: center;
-        justify-content: center;
-        gap: 30px;
+        gap: $gapGrid;
     }
     &_heading {
         font-weight: 400;
@@ -498,8 +495,7 @@ ul {
 
 .subscribe_form {
     padding-bottom: 156px;
-    display: flex;
-    justify-content: center;
+    @include flexjuscenter();
     width: 100%;
     height: 49px;
 }
@@ -523,7 +519,7 @@ ul {
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
-    display: flex;
+    @include flexjuscenter();
     align-items: center;
     text-align: center;
     color: $color_3;
@@ -533,7 +529,6 @@ ul {
     border-bottom-right-radius: 25px;
     width: 100px;
     text-align: center;
-    justify-content: center;
     height: 49px;
     &:hover {
         background: purple;
@@ -548,7 +543,7 @@ ul {
     justify-content: space-between;
     align-items: center;
     height: 79px;
-    background: #222224;
+    background: $color_9;
     &_text {
         font-weight: 400;
         font-size: 16px;
@@ -567,18 +562,16 @@ ul {
     }
     &:hover path {
         fill: $color_3;
-        transition: 0.5s;
+        transition: 0.1s;
     }
     &:active {
-        background: purple;
+        background: $background-color_hover;
     }
     width: 32px;
     height: 32px;
     font-size: 16px;
-    background: #FFFFFF;
-    // color: $color_5;
-    display: flex;
-    justify-content: center;
+    background:$color_3;
+    @include flexjuscenter();
     align-items: center;
     text-decoration: none;
 }
@@ -624,14 +617,12 @@ ul {
     height: 724px;
     position: relative;
     background: #F7F7F7;
-    display: flex;
-    justify-content: center;
+    @include flexjuscenter();
     align-items: center;
     &_left {
         left: 0;
         background: rgba(42, 42, 42, 0.15);
-        display: flex;
-        justify-content: center;
+        @include flexjuscenter();
         align-items: center;
         width: 47px;
         height: 47px;
@@ -644,8 +635,7 @@ ul {
     &_right {
         right: 0;
         background: rgba(42, 42, 42, 0.15);
-        display: flex;
-        justify-content: center;
+        @include flexjuscenter();
         align-items: center;
         width: 47px;
         height: 47px;
@@ -671,7 +661,7 @@ ul {
         font-weight: 300;
         font-size: 14px;
         line-height: 17px;
-        color: #F16D7F;
+        color: $color_2;
         padding-bottom: 12px;
     }
     &__line {
@@ -737,7 +727,7 @@ ul {
         padding-left: 16px;
     }
     &[open] {
-        background: #FFFFFF;
+        background: $color_3;
         box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
     }
     &[open] .filter__heading {
@@ -814,7 +804,7 @@ ul {
         color: #6F6E6E;
     }
     &__box {
-        background: #FFFFFF;
+        background: $color_3;
         box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
         padding: 7px 30px 11px 9px;
         position: absolute;
@@ -838,19 +828,18 @@ ul {
         margin-top: 48px;
         width: 212px;
         height: 48px;
-        display: flex;
-        justify-content: center;
-        border: 1px solid #F16D7F;
+        @include flexjuscenter();
+        border: 1px solid $color_2;
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
         line-height: 19px;
-        color: #F16D7F;
+        color: $color_2;
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
         line-height: 19px;
-        color: #F16D7F;
+        color: $color_2;
         align-items: center;
         gap: 22px;
         padding: 14px 14px 14px 23px;
@@ -862,8 +851,7 @@ ul {
 }
 
 .pagination {
-    display: flex;
-    justify-content: center;
+    @include flexjuscenter();
     align-items: center;
     padding-top: 48px;
     padding-bottom: 96px;
@@ -878,7 +866,7 @@ ul {
         font-weight: 400;
         font-size: 24px;
         line-height: 29px;
-        color: #F16D7F;
+        color: $color_2;
     }
 }
 
@@ -889,7 +877,6 @@ ul {
 }
 
 .shopping_product {
-    // background: #E5E5E5;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -906,17 +893,13 @@ ul {
     }
     &_content {
         width: 390px;
-        // padding: 22x 97px 62px 31px;
     }
     &_heading {
         font-style: normal;
         font-weight: 400;
         font-size: 24px;
         line-height: 29px;
-        color: #222222;
-        // padding-bottom: 42px;
-        // padding-top: 22px;
-        // gap: 6px;
+        color: $color_1;
         padding-bottom: 42px;
     }
     &_text {
@@ -962,6 +945,7 @@ ul {
         &:hover {
             background-color: $background-color_2;
             color: $color_3;
+            transition: 0.1s;
         }
     }
 }
@@ -975,18 +959,12 @@ ul {
     gap: 57px;
     width: 360px;
     height: 543px;
-    &_input {
-        // width: 360px;
-        // padding-top: 12px;
-        // padding-bottom: 15px;
-    }
     &_title {
         font-style: normal;
         font-weight: 300;
         font-size: 16px;
         line-height: 19px;
-        color: #222222;
-        // padding-bottom: 20px;
+        color: $color_1;
     }
     &_text {
         font-style: normal;
@@ -994,8 +972,6 @@ ul {
         font-size: 13px;
         line-height: 16px;
         color: #B1B1B1;
-        // padding-top: 20px;
-        // padding-bottom: 20px;
     }
     &_btn {
         font-style: normal;
@@ -1003,7 +979,7 @@ ul {
         font-size: 11px;
         line-height: 13px;
         color: #4A4A4A;
-        background-color: #FFFFFF;
+        background-color: $color_3 #FFFFFF;
         padding-top: 9px;
         padding-bottom: 11px;
         padding-left: 14px;
@@ -1012,21 +988,21 @@ ul {
         &:hover {
             background-color: $background-color_2;
             color: $color_3;
+            transition: 0.1s;
         }
     }
     &_check {
-        display: flex;
+        @include flexjuscenter();
         align-content: center;
         flex-wrap: wrap;
         flex-direction: column;
-        justify-content: center;
         align-items: flex-end;
         background: #F5F3F3;
         font-style: normal;
         font-weight: 300;
         font-size: 16px;
         line-height: 19px;
-        width: 360px;
+        width: 380px;
         height: 214px;
         &_subtitle {
             font-style: normal;
@@ -1041,33 +1017,29 @@ ul {
             font-weight: 300;
             font-size: 16px;
             line-height: 19px;
-            color: #222222;
+            color: $color_1;
             padding-bottom: 21px;
         }
         &_color {
-            color: #F16D7F;
+            color: $color_2;
         }
     }
     &_btn2 {
-        // margin-left: 44px;
-        // margin-right: 43px;
         margin-bottom: 42px;
         margin-top: 17px;
         font-style: normal;
         font-weight: 300;
         font-size: 16px;
         line-height: 19px;
-        color: #FFFFFF;
-        background: #F16D7F;
+        color: $color_3;
+        background: $color_2;
         text-align: center;
-        // width: 273px;
         padding: 15px 43px 16px 41px;
-        // padding-top: 17px;
-        // padding-bottom: 42px;
         border: none;
         &:hover {
             background-color: $background-color_2;
             color: $color_1;
+            transition: 0.1s;
         }
     }
     &_line {
