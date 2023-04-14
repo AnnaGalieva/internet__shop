@@ -511,7 +511,10 @@ ul {
 }
 .icon:hover {
   background: #F16D7F;
-  color: #FFFFFF;
+}
+.icon:hover path {
+  fill: #FFFFFF;
+  transition: 0.5s;
 }
 .icon:active {
   background: purple;

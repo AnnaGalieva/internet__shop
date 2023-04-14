@@ -563,8 +563,11 @@ ul {
 
 .icon {
     &:hover {
-        background: #F16D7F;
-        color: $color_3;
+        background: $color_2;
+    }
+    &:hover path {
+        fill: $color_3;
+        transition: 0.5s;
     }
     &:active {
         background: purple;
