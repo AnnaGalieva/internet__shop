@@ -592,25 +592,32 @@ ul {
     }
 }
 
-.breadcrumbs__link {
-    font-style: normal;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 17px;
-    color: 636363;
-    &_site {
-        font-weight: 400;
+.breadcrumbs {
+    &__ul {
+        list-style-type: none;
+        display: flex;
+    }
+    &__li:not(:last-child)::after {
+        content: '/';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        color: 636363;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    &__li:last-child .breadcrumbs__link {
+        font-weight: 700;
         color: $color_2;
     }
-}
-
-.breadcrumbs a::before {
-    content: '/';
-    color: black;
-}
-
-.breadcrumbs a:first-child::before {
-    content: '';
+    &__link {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        color: 636363;
+    }
 }
 
 .carusel {
