@@ -1061,11 +1061,130 @@ input[type="text"] {
     padding-left: 16px;
 }
 
+input[type="email"] {
+    width: 360px;
+    height: 45px;
+    padding-left: 16px;
+}
+
+input[type="password"] {
+    width: 360px;
+    height: 45px;
+    padding-left: 16px;
+}
+
 .closeModal {
     display: flex;
     justify-content: flex-end;
     padding-top: 28px;
     padding-right: 22px;
+}
+
+.breadcrumbs__registration {
+    padding-top: 59px;
+    padding-bottom: 60px;
+    background: #F8F3F4;
+    &_left {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        color: #F16D7F;
+    }
+}
+
+.registration {
+    padding-top: 64px;
+    padding-bottom: 96px;
+    width: 359px;
+    display: flex;
+    gap: 128px;
+    &__input {
+        &_title {
+            font-style: normal;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 19px;
+            color: $color_1;
+        }
+        &_texting {
+            font-style: normal;
+            font-weight: 300;
+            font-size: 13px;
+            line-height: 16px;
+            color: #B1B1B1;
+        }
+        &_sex {
+            font-style: normal;
+            font-weight: 300;
+            font-size: 11px;
+            line-height: 13px;
+            color: #000000;
+            display: flex;
+            gap: 10px;
+        }
+        &_text {
+            padding-top: 16px;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 13px;
+            line-height: 16px;
+            color: #B1B1B1;
+        }
+        &_button {
+            width: 167px;
+            height: 50px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: #FFFFFF;
+            background: #F16D7F;
+            border: none;
+            margin-top: 39px;
+            &:hover {
+                background-color: $background-color_2;
+                color: $color_1;
+                transition: 0.1s;
+            }
+            &:hover path {
+                fill: $color_1;
+                transition: 0.1s;
+            }
+        }
+    }
+}
+
+.loyality {
+    // height: 334px;
+    &_title {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+        color: #000000;
+        padding-bottom: 22px;
+    }
+    &_subtitle {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+        color: #000000;
+        padding-bottom: 22px;
+    }
+    &_offer {
+        width: 652px;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+        color: #000000;
+        padding-bottom: 16px;
+        gap: 22px;
+        display: flex;
+        align-items: center;
+    }
 }
 
 // .closeModal {
