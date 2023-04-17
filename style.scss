@@ -864,6 +864,21 @@ ul {
     padding-bottom: 96px;
 }
 
+.pagination-list {
+    display: flex;
+    gap: 15px;
+    &_item {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        color: #C4C4C4;
+        &_hov:hover {
+            color: #F16D7F;
+        }
+    }
+}
+
 .cart_text {
     background: #F8F3F4;
     padding-top: 60px;
@@ -1016,6 +1031,7 @@ ul {
         font-weight: 300;
         font-size: 16px;
         line-height: 19px;
+        box-sizing: border-box;
         width: 380px;
         height: 214px;
         &_subtitle {
@@ -1066,18 +1082,21 @@ input[type="text"] {
     width: 360px;
     height: 45px;
     padding-left: 16px;
+    border: 1px solid #A4A4A4;
 }
 
 input[type="email"] {
     width: 360px;
     height: 45px;
     padding-left: 16px;
+    border: 1px solid #A4A4A4;
 }
 
 input[type="password"] {
     width: 360px;
     height: 45px;
     padding-left: 16px;
+    border: 1px solid #A4A4A4;
 }
 
 input[type="number"] {
@@ -1085,6 +1104,7 @@ input[type="number"] {
     height: 24px;
     margin-left: 24px;
     text-align: center;
+    border: 1px solid #A4A4A4;
 }
 
 .closeModal {
