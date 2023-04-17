@@ -837,8 +837,8 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  padding-top: 96px;
-  padding-bottom: 72px;
+  margin-top: 96px;
+  margin-bottom: 72px;
 }
 .shopping__product_img {
   width: 262px;
@@ -847,10 +847,13 @@ ul {
 .shopping__product_item {
   display: flex;
   gap: 32px;
-  box-shadow: 10px 10px 10px 5px rgb(221, 221, 221);
+  box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
 }
 .shopping__product_content {
   width: 390px;
+}
+.shopping__product_head {
+  padding-bottom: 42px;
 }
 .shopping__product_heading {
   font-style: normal;
@@ -858,7 +861,10 @@ ul {
   font-size: 24px;
   line-height: 29px;
   color: #222222;
-  padding-bottom: 42px;
+}
+.shopping__product_heading:hover {
+  color: #F26376;
+  transition: 0.1s;
 }
 .shopping__product_text {
   font-style: normal;
@@ -867,21 +873,10 @@ ul {
   line-height: 26px;
   color: #575757;
   padding-bottom: 6px;
+  display: flex;
 }
 .shopping__product_color {
   color: #EF5B70;
-}
-.shopping__product_border {
-  border: 1px solid #EAEAEA;
-  height: 25px;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 22px;
-  color: #656565;
-  margin-left: 24px;
-  padding-left: 16px;
-  padding-right: 16px;
 }
 .shopping__product_button {
   display: flex;
@@ -1022,6 +1017,13 @@ input[type=password] {
   width: 360px;
   height: 45px;
   padding-left: 16px;
+}
+
+input[type=number] {
+  width: 44px;
+  height: 24px;
+  margin-left: 24px;
+  text-align: center;
 }
 
 .closeModal {

@@ -887,8 +887,8 @@ ul {
     display: flex;
     flex-direction: column;
     gap: 40px;
-    padding-top: 96px;
-    padding-bottom: 72px;
+    margin-top: 96px;
+    margin-bottom: 72px;
     &_img {
         width: 262px;
         height: 306px;
@@ -896,10 +896,13 @@ ul {
     &_item {
         display: flex;
         gap: 32px;
-        box-shadow: 10px 10px 10px 5px rgba(221, 221, 221, 1);
+        box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
     }
     &_content {
         width: 390px;
+    }
+    &_head {
+        padding-bottom: 42px;
     }
     &_heading {
         font-style: normal;
@@ -907,7 +910,10 @@ ul {
         font-size: 24px;
         line-height: 29px;
         color: $color_1;
-        padding-bottom: 42px;
+        &:hover {
+            color: $color_7;
+            transition: 0.1s;
+        }
     }
     &_text {
         font-style: normal;
@@ -916,22 +922,23 @@ ul {
         line-height: 26px;
         color: #575757;
         padding-bottom: 6px;
+        display: flex;
     }
     &_color {
         color: #EF5B70;
     }
-    &_border {
-        border: 1px solid #EAEAEA;
-        height: 25px;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 22px;
-        color: #656565;
-        margin-left: 24px;
-        padding-left: 16px;
-        padding-right: 16px;
-    }
+    // &_border {
+    //     border: 1px solid #EAEAEA;
+    //     height: 25px;
+    //     font-style: normal;
+    //     font-weight: 400;
+    //     font-size: 18px;
+    //     line-height: 22px;
+    //     color: #656565;
+    //     margin-left: 24px;
+    //     padding-left: 16px;
+    //     padding-right: 16px;
+    // }
     &_button {
         display: flex;
         gap: 192px;
@@ -1071,6 +1078,13 @@ input[type="password"] {
     width: 360px;
     height: 45px;
     padding-left: 16px;
+}
+
+input[type="number"] {
+    width: 44px;
+    height: 24px;
+    margin-left: 24px;
+    text-align: center;
 }
 
 .closeModal {
