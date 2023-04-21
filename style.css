@@ -893,9 +893,16 @@ ul {
   box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
 }
 .shopping__product_content {
-  width: 390px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 137px;
 }
 .shopping__product_head {
+  width: 390px;
+}
+.shopping__product_link {
+  padding-top: 22px;
   padding-bottom: 42px;
 }
 .shopping__product_heading {
@@ -972,6 +979,20 @@ ul {
   color: #222222;
 }
 .shopping__form_text {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #4A4A4A;
+}
+.shopping__form_text::-moz-placeholder {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+}
+.shopping__form_text::placeholder {
   font-style: normal;
   font-weight: 300;
   font-size: 13px;
@@ -1053,32 +1074,46 @@ ul {
 }
 
 input[type=text] {
-  width: 360px;
+  width: 340px;
   height: 45px;
   padding-left: 16px;
   border: 1px solid #A4A4A4;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
 }
 
 input[type=email] {
-  width: 360px;
+  width: 340px;
   height: 45px;
   padding-left: 16px;
   border: 1px solid #A4A4A4;
 }
 
 input[type=password] {
-  width: 360px;
+  width: 340px;
   height: 45px;
   padding-left: 16px;
   border: 1px solid #A4A4A4;
 }
 
 input[type=number] {
-  width: 44px;
-  height: 24px;
-  margin-left: 24px;
+  width: 24px;
+  height: 15px;
+  margin-left: 15px;
   text-align: center;
-  border: 1px solid #A4A4A4;
+  border: 1px solid #EAEAEA;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  color: #656565;
+  padding-left: 9x;
+  padding-left: 9x;
+  padding-left: 9x;
+  padding-bottom: 2x;
 }
 
 .closeModal {
@@ -1334,6 +1369,9 @@ input[type=number] {
   .carusel_right {
     top: 288px;
   }
+  .sort__box {
+    z-index: 1;
+  }
   .product-prod_all_content {
     display: flex;
     flex-direction: row-reverse;
@@ -1343,20 +1381,50 @@ input[type=number] {
   }
   .shopping {
     flex-direction: column;
+    gap: 0px;
   }
   .shopping__product {
     margin-top: 59px;
     margin-bottom: 62px;
+    gap: 40px;
   }
   .shopping__product_button {
     justify-content: center;
     gap: 48px;
-    padding-bottom: 64px;
+    padding-bottom: 0px;
+  }
+  .shopping__product_content {
+    gap: 200px;
+  }
+  .shopping__product_link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #222222;
+    width: 190px;
+    padding-bottom: 26px;
+  }
+  .shopping__product_text {
+    padding-bottom: 6px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    color: #6F6E6E;
+    align-items: center;
   }
   .shopping__form {
     flex-direction: row;
     gap: 14px;
     height: 214px;
+    padding-top: 64px;
+    padding-bottom: 128px;
+  }
+  .shopping__form_check {
+    margin-top: 37px;
+    width: 380px;
+    height: 135px;
   }
   .registration {
     gap: 22px;
@@ -1395,7 +1463,6 @@ input[type=number] {
   .center {
     padding-left: 16px;
     padding-right: 16px;
-    min-width: 359px;
   }
   .header {
     min-width: 375px;
