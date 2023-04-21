@@ -1461,11 +1461,11 @@ input[type=number] {
 }
 @media (max-width: 767px) {
   .center {
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: calc(50% - 179px);
+    padding-right: calc(50% - 179px);
   }
   .header {
-    min-width: 375px;
+    min-width: 320px;
   }
   .header_right_registration {
     display: none;
@@ -1474,7 +1474,7 @@ input[type=number] {
     display: none;
   }
   .top__content {
-    min-width: 375px;
+    min-width: 320px;
     height: 363px;
     justify-content: center;
   }
@@ -1494,6 +1494,9 @@ input[type=number] {
     border-left: 12px solid #F16D7F;
     padding-left: 16px;
   }
+  .top__info {
+    min-width: 320px;
+  }
   .top__info_text {
     display: flex;
     justify-content: center;
@@ -1501,6 +1504,7 @@ input[type=number] {
     border-left: none;
   }
   .sale {
+    min-width: 320px;
     grid-template-columns: auto;
     grid-template-columns: minmax(auto, 343px);
     grid-template-rows: repeat(3, 248px) 111px;
@@ -1520,7 +1524,11 @@ input[type=number] {
        object-fit: cover;
   }
   .item_product {
-    max-width: 359px;
+    min-width: 320px;
+  }
+  .product {
+    min-width: 320px;
+    padding-top: 64px;
   }
   .product_img {
     width: 100%;
@@ -1535,24 +1543,17 @@ input[type=number] {
     padding-top: 41px;
     padding-bottom: 96px;
   }
-  .footer_advantages {
-    min-width: 375px;
+  .advantages {
+    min-width: 320px;
     height: 610px;
   }
   .footer_subscribe {
-    min-width: 375px;
+    min-width: 320px;
     padding-top: 64px;
     padding-bottom: 110px;
     background-size: cover;
     background-image: url(img/footer_background2.svg);
     gap: 5px;
-  }
-  .footer_logo {
-    min-width: 375px;
-    padding-top: 43px;
-    padding-bottom: 9px;
-    display: flex;
-    flex-direction: column-reverse;
   }
   .footer_subscribe_text {
     font-weight: 400;
@@ -1574,7 +1575,11 @@ input[type=number] {
     width: 91px;
     height: 91px;
   }
-  .subscribe_form {
-    padding-bottom: 110px;
+  .footer_logo {
+    min-width: 320px;
+    padding-top: 43px;
+    padding-bottom: 9px;
+    display: flex;
+    flex-direction: column-reverse;
   }
 }/*# sourceMappingURL=style.css.map */
