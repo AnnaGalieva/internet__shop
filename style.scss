@@ -1674,8 +1674,43 @@ input[type="number"] {
         display: flex;
         flex-direction: column-reverse;
     }
-    // .subscribe_form {
-    //     padding-bottom: 110px;
-    //     width: 341px;
-    // }
+    .top-head {
+        min-width: 320px;
+        display: flex;
+        flex-direction: column;
+        padding-top: 24px;
+        padding-bottom: 46px;
+        gap: 32px;
+    }
+    .filter {
+        width: 38px;
+        &_svg {
+            width: 37px;
+            height: 25px;
+        }
+        &__summary {
+            flex-direction: column;
+        }
+    }
+    .filter__heading {
+        display: none;
+    }
+    .filter-sort {
+        min-width: 320px;
+        padding-top: 26px;
+        padding-bottom: 41px;
+        gap: 56px;
+        display: flex;
+        align-items: center;
+    }
+    .sort {
+        gap: 23px;
+    }
+    .sort__heading {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        color: #6F6E6E;
+    }
 }
