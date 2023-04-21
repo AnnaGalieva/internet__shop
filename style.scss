@@ -1450,6 +1450,9 @@ input[type="number"] {
         &_right {
             top: 288px;
         }
+        &_img {
+            max-width: 50%;
+        }
     }
     .sort__box {
         z-index: 1;
@@ -1712,5 +1715,45 @@ input[type="number"] {
         font-size: 12px;
         line-height: 14px;
         color: #6F6E6E;
+    }
+    .carusel {
+        height: 624px;
+        &_img {
+            max-width: 100%;
+        }
+    }
+    .content {
+        min-width: 320px;
+    }
+    .content__text {
+        line-height: 20px;
+        width: 326px;
+        height: 105px;
+    }
+    .content__heding {
+        padding-bottom: 31px;
+    }
+    .content__price {
+        padding-bottom: 32px;
+    }
+    .content__line2 {
+        margin-bottom: 49px;
+    }
+    .sort__heading {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 12px;
+        color: #6F6E6E;
+    }
+    .sort__button {
+        margin-top: 64px;
+    }
+    .product-prod {
+        padding-bottom: 64px;
+    }
+    .product-prod_all_content {
+        display: flex;
+        flex-direction: column;
     }
 }
