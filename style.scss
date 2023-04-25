@@ -1556,9 +1556,6 @@ input[type="number"] {
     .center {
         padding-left: calc(50% - 179px);
         padding-right: calc(50% - 179px);
-        // padding-left: 16px;
-        // padding-right: 16px;
-        // min-width: 359px;
     }
     .header {
         min-width: 320px;
@@ -1695,9 +1692,6 @@ input[type="number"] {
             flex-direction: column;
             display: flex;
             align-items: flex-start;
-            width: 360px;
-        }
-        &__content {
             // width: 360px;
         }
     }
@@ -1706,11 +1700,13 @@ input[type="number"] {
     }
     .filter-sort {
         min-width: 320px;
-        padding-top: 10px;
-        padding-bottom: 41px;
-        gap: 56px;
-        // display: flex;
-        // align-items: center;
+        padding-top: 8px;
+        /* padding-bottom: 41px; */
+        gap: 10px;
+        /* display: flex; */
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        flex-wrap: wrap;
     }
     .sort {
         gap: 23px;
@@ -1807,7 +1803,7 @@ input[type="number"] {
             gap: 9px;
         }
         &_btn {
-            margin-top: 30px;
+            margin-top: 5px;
             padding: 8px 17px 8px 17px;
             font-weight: 400;
             font-size: 12px;
@@ -1830,12 +1826,9 @@ input[type="number"] {
         }
     }
     .shopping_product_img {
-        // width: 144px;
         height: 188px;
     }
     .shopping__form {
-        // padding-top: 48px;
-        // padding-bottom: 96px;
         padding-top: 170px;
         padding-bottom: 260px;
         display: flex;

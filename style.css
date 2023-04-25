@@ -1601,16 +1601,19 @@ input[type=number] {
     flex-direction: column;
     display: flex;
     align-items: flex-start;
-    width: 360px;
   }
   .filter__heading {
     display: none;
   }
   .filter-sort {
     min-width: 320px;
-    padding-top: 10px;
-    padding-bottom: 41px;
-    gap: 56px;
+    padding-top: 8px;
+    /* padding-bottom: 41px; */
+    gap: 10px;
+    /* display: flex; */
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
   .sort {
     gap: 23px;
@@ -1706,7 +1709,7 @@ input[type=number] {
     gap: 9px;
   }
   .shopping__product_btn {
-    margin-top: 30px;
+    margin-top: 5px;
     padding: 8px 17px 8px 17px;
     font-weight: 400;
     font-size: 12px;
